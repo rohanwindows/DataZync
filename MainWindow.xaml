@@ -1,0 +1,18 @@
+﻿<Window x:Class="AlbumCover.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlbumCover"
+        mc:Ignorable="d"
+        Title="DataZync - Arturia" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Image x:Name="MainBackground" Height="435" Width="800" Source="/Arturia_Keystep37.jpeg" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="TextBlockSmall" HorizontalAlignment="Left" Margin="44,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}" Foreground="#FF221969" FontSize="18" Height="114" Width="390" FontFamily="Bahnschrift"><Run Text="DataZync (base client version - Arturia)"/><LineBreak/><Run Text="VA 133 "/></TextBlock>
+        <CheckBox x:Name="CheckBox_Copy" Content="Sync Start" HorizontalAlignment="Left" Margin="55,333,0,0" VerticalAlignment="Top" Background="#FFFFFDFD" IsChecked="False" Height="16" Width="76" IsThreeState="True" Checked="CheckBox_Copy_Checked"/>
+        <RadioButton Content="Database Connect" HorizontalAlignment="Left" Margin="136,334,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Server Connect" HorizontalAlignment="Left" Margin="275,334,0,0" VerticalAlignment="Top"/>
+        <ProgressBar HorizontalAlignment="Left" Height="10" Margin="275,354,0,0" VerticalAlignment="Top" Width="100" ValueChanged="ProgressBar_ValueChanged" Value="75"/>
+
+    </Grid>
+</Window>
